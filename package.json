@@ -1,6 +1,6 @@
 {
-  "version": "0.0.0",
-  "name": "CHANGE_ME",
+  "version": "0.0.1",
+  "name": "quick-order",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -12,11 +12,6 @@
   "intl-equalizer": {
     "referenceLocale": "en",
     "localeDirectory": "messages"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
