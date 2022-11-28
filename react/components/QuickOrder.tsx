@@ -17,7 +17,8 @@ const QuickOrder = () => {
     "quickOrder_label-container",
     "quickOrder_label",
     "quickOrder_input",
-    "quickOrder_input-btn"
+    "quickOrder_input-btn",
+    "quickOrder_title"
   ]
   const handles = useCssHandles(CSS_HANDLES)
 
@@ -42,7 +43,7 @@ const QuickOrder = () => {
         }
       })
         .then(() => {
-          window.location.href = "/checkout"
+          window.location.href = "/compra"
         })
     }
   }, [product, search])
@@ -57,7 +58,7 @@ const QuickOrder = () => {
   const searchProduct = (evt: any) => {
     evt.preventDefault();
     if (!inputText) {
-      alert("gato")
+      alert("No has seleccionado ningún SKU")
     } else {
       //Busqueda, data del producto
       setSearch(inputText)
@@ -65,13 +66,13 @@ const QuickOrder = () => {
     }
   }
   return <div className={handles["quickOrder_container"]}>
-    <h2> Easy fast</h2>
+    <h2 className={handles["quickOrder_title"]}> Easy fast</h2>
     <form className={handles["quickOrder_form"]} onSubmit={searchProduct}>
       <div className={handles["quickOrder_label-container"]} >
         <label className={handles["quickOrder_label"]} htmlFor="sku">Ingresa un SKU:</label>
         <input className={handles["quickOrder_input"]} id="sku" type="text" onChange={handleChange}></input>
       </div>
-      <input className={handles["quickOrder_input-btn"]} type="submit" value="Añadir al carrito" />
+      <input className={handles["quickOrder_input-btn"]} type="submit" value="AGREGAR" />
     </form>
   </div>
 }
