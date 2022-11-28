@@ -1,0 +1,42 @@
+.quickOrder_container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 3rem
+}
+
+.h2 {
+  margin-right: 2rem;
+  padding-bottom: 1rem
+}
+
+.quickOrder_label {
+  color: #E2001A;
+  font-weight: bold;
+  padding-right: 2rem;
+  font-size: 16px;
+  font-family: "Montserrat"
+}
+
+.quickOrder_input {
+  border-radius: 10px;
+  height: 30px;
+  width: 40%
+}
+
+.quickOrder_label-container {
+  padding-bottom: 2rem
+}
+
+.quickOrder_input-btn {
+  background-color: #E2001A;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  width: 80%;
+  height: 35px;
+  font-family: "Montserrat"
+}
